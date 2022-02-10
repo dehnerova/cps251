@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LayoutSample</string>
+    <string name="samsung_galaxy_s6">Samsung Galaxy S6</string>
+    <string name="pricing">PRICING</string>
+    <string name="buy_now">BUY NOW</string>
+    <string name="details">DETAILS</string>
+    <string name="todo">TODO</string>
+</resources>
