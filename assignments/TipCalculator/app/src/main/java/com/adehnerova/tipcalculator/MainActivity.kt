@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculateTip() {
-       //checking for input
+       //checking for numerical input
         if (binding.billAmount.text.isNotEmpty()) {
             //collecting text box input as a string
             binding.txtView.text = getString(R.string.mainText)
