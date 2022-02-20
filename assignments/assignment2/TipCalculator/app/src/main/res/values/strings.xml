@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TipCalculator</string>
+    <string name="billTotal">Enter Bill Total</string>
+    <string name="btn">Calculate Tip</string>
+    <string name="txtView">10%% = %1$s\n15%% = %2$s\n20%% = %3$s</string>
+    <string name="errorCall">Please enter an amount</string>
+    <string name="mainText">Calculations displayed here...</string>
+</resources>
