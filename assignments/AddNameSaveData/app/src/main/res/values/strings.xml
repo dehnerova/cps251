@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AddNameSaveData</string>
+    <string name="add_name">Add Name</string>
+    <string name="name_input">Enter name</string>
+    <string name="no_value_string">no_value_string</string>
+    <string name="intro">You must enter a name</string>
+</resources>
