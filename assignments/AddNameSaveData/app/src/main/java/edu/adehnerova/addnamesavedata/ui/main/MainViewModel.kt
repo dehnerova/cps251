@@ -7,17 +7,19 @@ class MainViewModel : ViewModel() {
     private var personName = ""
     private var nameList: ArrayList<String> = arrayListOf()
 
-    fun setName(value: String) {
-        personName = "$value \n"
-        nameList.add(personName)
-    }
-
     fun getNames(): String {
-
+        //iterating through array list
         var nameString = ""
         for (i in nameList)
             nameString += i
 
         return nameString
     }
+
+    fun setName(value: String) {
+        //adding name to array, followed by line return
+        personName = "$value \n"
+        nameList.add(personName)
+    }
+
 }

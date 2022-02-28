@@ -26,7 +26,7 @@ class MainFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-//        return inflater.inflate(R.layout.main_fragment, container, false)
+//       return inflater.inflate(R.layout.main_fragment, container, false)
         _binding = MainFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -40,17 +40,19 @@ class MainFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
+        //if array contains names, display them always
         if (viewModel.getNames() != "") {
             binding.namesView.text = viewModel.getNames()
         }
-
+        //each time button is clicked, add name to array
         binding.addName.setOnClickListener {
+            binding.namesView.text = getString(R.string.intro)
             if (binding.nameInput.text.isNotEmpty()) {
                 viewModel.setName(binding.nameInput.text.toString())
                 binding.namesView.text = viewModel.getNames()
             }
             else {
-                binding.namesView.text = getString(R.string.intro)
+                binding.namesView.text = getString(R.string.error)
             }
         }
     }

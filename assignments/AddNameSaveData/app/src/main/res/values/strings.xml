@@ -2,6 +2,6 @@
     <string name="app_name">AddNameSaveData</string>
     <string name="add_name">Add Name</string>
     <string name="name_input">Enter name</string>
-    <string name="no_value_string">no_value_string</string>
-    <string name="intro">You must enter a name</string>
+    <string name="intro">List of names&#8230;</string>
+    <string name="error">Please enter a name first</string>
 </resources>
