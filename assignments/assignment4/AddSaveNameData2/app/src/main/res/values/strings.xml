@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AddSaveNameData2</string>
+    <string name="name_input">Enter Name</string>
+    <string name="add_name">ADD NAME</string>
+    <string name="no_value">No names to display&#8230;</string>
+    <string name="error">Please add a name in order to display list</string>
+</resources>
