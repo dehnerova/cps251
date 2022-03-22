@@ -10,12 +10,10 @@ import androidx.lifecycle.Observer
 import edu.adehnerova.lifecycleawareness.databinding.MainFragmentBinding
 import edu.adehnerova.lifecycleawareness.DemoObserver
 
-
-private var _binding: MainFragmentBinding? = null
-private val binding get() = _binding!!
-
 class MainFragment : Fragment() {
 
+    private var _binding: MainFragmentBinding? = null
+    private val binding get() = _binding!!
     companion object {
         fun newInstance() = MainFragment()
     }
@@ -50,4 +48,5 @@ class MainFragment : Fragment() {
         // @ jetpack liveData tutorial
         viewModel.getMsg().observe(viewLifecycleOwner, resultObserver)
     }
+
 }
