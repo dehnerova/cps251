@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">NavigationProject</string>
+    <string name="defaultView">Image Below</string>
+    <string name="button1">Display Image 1</string>
+    <string name="button2">Display Image 2</string>
+    <string name="button3">Display Image 3</string>
+    <string name="image1" tools:ignore="Typos">Image1</string>
+    <string name="image2">Image2</string>
+    <string name="image3">Image3</string>
+</resources>
