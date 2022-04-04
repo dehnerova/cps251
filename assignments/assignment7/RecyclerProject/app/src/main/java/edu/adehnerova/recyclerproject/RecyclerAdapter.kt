@@ -6,7 +6,6 @@ import android.widget.TextView
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.snackbar.Snackbar
 
 class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
@@ -17,17 +16,6 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
         var itemTitle: TextView = itemView.findViewById(R.id.itemTitle)
         var itemDetail: TextView = itemView.findViewById(R.id.itemDetail)
 
-        init {
-
-            itemView.setOnClickListener { v: View ->
-
-                val position: Int = getAdapterPosition()
-                Snackbar.make(
-                    v, "Click detected on item $position",
-                    Snackbar.LENGTH_LONG
-                ).setAction("Action", null).show()
-            }
-        }
     }
 
 
