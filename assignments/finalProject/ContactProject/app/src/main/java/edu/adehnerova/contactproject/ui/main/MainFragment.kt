@@ -78,7 +78,7 @@ class MainFragment : Fragment() {
     private fun observerSetup() {
         viewModel.getSearchResults()?.observe(viewLifecycleOwner, Observer { contacts ->
             contacts?.let {
-                if (it.isNullOrEmpty()) {
+                if (it.isNotEmpty()) {
                     contactAdapter?.setContactList(it)
                 }
                 else {
